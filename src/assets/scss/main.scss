@@ -2,10 +2,14 @@
 @use "partials/variables.scss" as *;
 @use "partials/mixins.scss" as *;
 
-main {
-   
-}
+
 
 .darkBlueBg {
     background-color: $deepDarkblue;
+}
+.lightgreyBg {
+     background-color: $lightGrey;
+}
+.veryLightBlueBg {
+    background-color: $veryLightBlue;
 }
