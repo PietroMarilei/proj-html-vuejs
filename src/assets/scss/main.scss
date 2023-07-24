@@ -3,5 +3,9 @@
 @use "partials/mixins.scss" as *;
 
 main {
-    background-color: $main-color;
+   
+}
+
+.darkBlueBg {
+    background-color: $deepDarkblue;
 }
