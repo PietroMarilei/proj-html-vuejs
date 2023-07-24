@@ -171,6 +171,7 @@ export default {
 
         h1 span {
           background-color:$midBlue ;
+          color:$darkBlue ;
           padding: 0.5rem 1rem;
           text-align: center;
           border-radius: 5px;

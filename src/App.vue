@@ -41,8 +41,8 @@ export default {
 </template>
 
 <style lang="scss">
-  @use "./assets/scss/main.scss" as *;
   @use "./assets/scss/partials/variables.scss" as *;
+  @import "./assets/scss/main.scss" ;
   
   body {
     background-color: lightslategray;

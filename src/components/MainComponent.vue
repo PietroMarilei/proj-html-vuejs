@@ -1,9 +1,13 @@
 <script>
+import ServiceComp from './ServiceComp.vue';
 import { store } from '../store';
 export default {
+  components: {
+    ServiceComp,
+  },
   data() {
     return {
-      greeting: 'Hello World!',
+     
       store,
       
     }
@@ -17,11 +21,11 @@ export default {
 <template>
     <!-- main template -->
     <main>
-    MAIN
+    <ServiceComp/>
   </main>
 
 </template>
 
 <style lang="scss" scoped>
-    
+     @use "../assets/scss/partials/variables.scss" as *;
 </style>
