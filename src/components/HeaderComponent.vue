@@ -68,9 +68,18 @@ export default {
 
           <div class="jumbo_center">
             <h1>
-              READY <span>TEAM</span>
+              Ready <span>TEAM</span>
               
             </h1>
+
+            <p>
+              No matter what your company needs: we will be ready to assist you in the best possibile way
+            </p>
+
+            <div class="button_wrap">
+              <button>GET IN TOUCH</button>
+              <button id="readMoreBtn">READ MORE</button>
+            </div>
           </div>
          
           
@@ -116,7 +125,7 @@ export default {
       background-image: url("../assets/img/bg-parallax\ cropped.png");
       background-size: 100%;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center ;
       height: 600px;
       position: relative;
 
@@ -124,6 +133,7 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0.5rem;
 
         ul {
             display: flex;
@@ -152,11 +162,49 @@ export default {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        width: 400px;
+
+        color: $deepDarkblue;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+        h1 span {
+          background-color:$midBlue ;
+          padding: 0.5rem 1rem;
+          text-align: center;
+          border-radius: 5px;
+        };
+
+        p {
+          margin: 1rem 0;
+          color: $darkGrey;
+          font-weight: 100;
+          font-size: 1rem;
+        }
+
+        .button_wrap {
+          display: flex;
+          justify-content: center;
+
+          button {
+              all:unset;
+              background-color: $lightblue;
+              color:$lightGrey ;
+              font-weight: 600;
+              font-size: 1rem;
+              padding: 0.4rem 0.5rem;
+              border-radius: 3px;
+              margin: 0.3rem;
+          }
+
+          #readMoreBtn {
+            background-color: $primaryWhite ;
+            border: 2px solid $lightblue;
+            color: $lightblue;
+          }
+        }
       }
-     
-      
+
     }
 </style>
