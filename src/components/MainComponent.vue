@@ -2,12 +2,14 @@
 import ServiceComp from './ServiceComp.vue';
 import CompanyComp from './CompanyComp.vue';
 import ActionComp from './ActionComp.vue';
+import ResultsComp from './ResultsComp.vue';
 import { store } from '../store';
 export default {
   components: {
     ServiceComp,
     CompanyComp,
-    ActionComp
+    ActionComp,
+    ResultsComp,
   },
   data() {
     return {
@@ -30,6 +32,8 @@ export default {
     <CompanyComp/>
 
     <ActionComp/>
+
+    <ResultsComp/>
 
   </main>
 

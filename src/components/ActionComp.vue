@@ -20,7 +20,7 @@ export default {
     <!-- footer template -->
     <div class="primaryWhiteBg">
         <div class="container">
-            <div class="row">
+            <div class="row title">
                 <p>
                     WE DO MORE FOR EVERYONE
                 </p>
@@ -51,7 +51,7 @@ export default {
                     </li>
                 </ul>
 
-                <div class="card_wrapper">
+                <div class="card_container">
                     <ActionCardComp v-for="(singleProj,i) in this.store.projectsArr" :key="i"
                     :imgPath="singleProj.img"
                     :title="singleProj.title"/>
@@ -62,13 +62,31 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/scss/partials/variables.scss" as *;
 .container {
     max-width: 900px;
     margin: 0 auto;
+    padding: 5rem 0;
+
 }
 
-.row {
+.row.title{
     text-align: center;
+
+    p {
+        color:$lightblue ;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        padding: 1rem 0;
+        span {
+            background-color: $blueGrey;
+            color: $darkBlue ;
+            padding:0 0.4rem;
+        }
+    }
 }
 
 ul {
@@ -78,7 +96,19 @@ ul {
     padding: 2rem 0;
 
     li {
-        padding: 0 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    li:hover {
+        background-color:$midBlue ;
+        cursor: pointer;
     }
 }
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
 </style>

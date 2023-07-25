@@ -1,0 +1,121 @@
+<script>
+import { store } from '../store';
+export default {
+    data() {
+        return {
+            greeting: 'Hello World!',
+            store,
+        }
+    },
+    methods: {
+
+    },
+}
+</script>
+
+<template>
+    <div class="bg_container">
+        <div class="container">
+            <div class="row title">
+                <p>
+                    WHAT WE ARE DOING
+                </p>
+
+                <h2>
+                    <span>Results</span> in Numbers
+                </h2>
+            </div>
+
+            <div class="row numbers">
+                <div class="numb">
+                    <h2>
+                        128
+                    </h2>
+                    <h4>
+                        Certifications
+                    </h4>
+                </div>
+
+                <div class="numb">
+                        <h2>
+                            128
+                        </h2>
+                        <h4>
+                            Certifications
+                        </h4>
+                    </div>
+
+                    <div class="numb">
+                        <h2>
+                            128
+                        </h2>
+                        <h4>
+                            Certifications
+                        </h4>
+                    </div>
+
+                    <div class="numb">
+                        <h2>
+                            128
+                        </h2>
+                        <h4>
+                            Certifications
+                        </h4>
+                    </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style lang="scss" scoped>
+@use "../assets/scss/partials/variables.scss" as *;
+
+.bg_container {
+    background-image: url(../assets/img/bg-7.jpg);     
+   background-position: center;
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    p {
+        color: $lightblue ;
+        font-weight: 500;
+        font-size: 0.8rem;
+        padding: 0.8rem 0;
+    }
+
+    h2 {
+        color: $primaryWhite;
+        
+
+        span {
+            background-color: $darkBlue;
+            padding:0 0.4rem;
+        }
+    }
+}
+
+.numbers {
+    padding: 2rem 0;
+    color: $primaryWhite;
+
+    display: flex;
+    justify-content: space-evenly;
+
+
+    .numb {
+        text-align: center;
+        padding: 2rem 0;
+
+        h2 {
+            color: $lightblue;
+        }
+    }
+}
+</style>
