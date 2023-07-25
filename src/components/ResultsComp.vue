@@ -63,6 +63,34 @@ export default {
                         </h4>
                     </div>
             </div>
+
+           
+        </div>
+    </div>
+
+    <div class="darkBg_container">
+        <div class="container">
+             <div class="row lang">
+                    <a href="#">
+                        <img src="../assets/img/logo-4.png" alt="">
+                    </a>
+
+                     <a href="#">
+                            <img src="../assets/img/logo-5.png" alt="">
+                        </a>
+
+                         <a href="#">
+                            <img src="../assets/img/logo-1.png" alt="">
+                        </a>
+
+                         <a href="#">
+                            <img src="../assets/img/logo-3.png" alt="">
+                        </a>
+                         <a href="#">
+                            <img src="../assets/img/logo-4.png" alt="">
+                        </a>
+                        
+                </div>
         </div>
     </div>
 </template>
@@ -116,6 +144,20 @@ export default {
         h2 {
             color: $lightblue;
         }
+    }
+}
+.darkBg_container {
+    background-color: $backGrey;
+}
+.lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+
+    img {
+        width: 50%;
+        filter: brightness(200%);
     }
 }
 </style>
