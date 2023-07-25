@@ -1,6 +1,10 @@
 <script>
 import { store } from '../store';
+import ActionCardComp from './ActionCardComp.vue';
 export default {
+    components: {
+        ActionCardComp,
+},
     data() {
         return {
             store,
@@ -48,7 +52,9 @@ export default {
                 </ul>
 
                 <div class="card_wrapper">
-                    
+                    <ActionCardComp v-for="(singleProj,i) in this.store.projectsArr" :key="i"
+                    :imgPath="singleProj.img"
+                    :title="singleProj.title"/>
                 </div>
             </div>
         </div>
