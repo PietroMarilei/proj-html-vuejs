@@ -49,11 +49,8 @@ export default {
          background-color: white;
          border-radius: 10px;
          padding: 1rem;
-        
+        min-height: 100%;
 
-        //  >* {
-        //     padding: 0.8rem 0;
-        //  }
          
     }
     .card_cont {
@@ -67,12 +64,20 @@ export default {
             height: 30px;
         }
 
+        button:hover {
+
+        }
+
         .left_side {
             .img_wrapper {
                 width: 30px;
                 height: 30px;
+                margin: 1rem 0;
             }
-            
+
+            h3 {
+                margin: 0.3rem 0;
+            }     
         }
     }
 

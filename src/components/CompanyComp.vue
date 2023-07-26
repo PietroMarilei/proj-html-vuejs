@@ -73,9 +73,9 @@ export default {
                             <button id="read_more">READ MORE</button>
                         </div>
                     </div>
-                    <div class="right_side">
-                        <!-- <img src="../assets/img/about-4.jpg" alt=""> -->
-                    </div>
+                    <!-- <div class="right_side">
+                        <img src="../assets/img/about-4.jpg" alt="">
+                    </div> -->
 
                 </div>
             </div>
@@ -106,8 +106,9 @@ export default {
 }
 
 .wrapper {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    width: 50%;
 
     .right_side {
         // border: 2px dashed red;

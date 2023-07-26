@@ -9,32 +9,7 @@ export default {
         
         return {
             store,
-            allServices: [
-                {
-                   icon: '../assets/img/svgs/svg-1.svg' ,
-                   title: 'Audit e Assurance',
-                },
-                {
-                    icon: '../assets/img/svgs/svg-2.svg',
-                    title: 'Financial Advisory',
-                },
-                {
-                    icon: '../assets/img/svgs/svg-3.svg',
-                    title: 'Analytics and M&A',
-                },
-                {
-                    icon: '../assets/img/svgs/svg-4.svg',
-                    title: 'Middle Marketing',
-                },
-                {
-                    icon: '../assets/img/svgs/svg-5.svg',
-                    title: 'Legal Consulting lorem lore lorem lore',
-                },
-                {
-                    icon: '../assets/img/svgs/svg-6.svg',
-                    title: 'Regulatory Risk',
-                },
-            ]
+           
         }
     },
     methods: {
@@ -67,7 +42,7 @@ export default {
             <div class="row">
                 <div class="card_wrap">
                     <!-- TODO v-for direct on componet not single card  -->
-                    <div v-for="(singleCard,i) in allServices" class="singleCard">
+                    <div v-for="(singleCard,i) in this.store.allServices" class="singleCard">
                         <!-- {{ singleCard }} -->
                         <ServicesCardComp 
                             :iconPath="singleCard.icon"
@@ -148,10 +123,9 @@ export default {
     padding-bottom: 3rem;
     .singleCard {
         width: calc((100%  / 3) - 1rem);
-        //max-height: 100%;//
-        
         flex-grow: 1;
 
+        
     }
 }
 </style>

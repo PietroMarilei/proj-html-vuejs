@@ -1,9 +1,7 @@
 <script>
-import { store } from '../store';
 export default {
     data() {
         return {
-            store,
         }
     },
     methods: {
@@ -21,7 +19,6 @@ export default {
 
 <template>
     <div class="card_wrapper">
-        <!-- ⁉‼❌📛 v-bind on style not working -->
         <div class="inner_card" >
             <div class="img_wrapper">
               <img :src="getImagePath(imgPath)" alt="test">
@@ -40,7 +37,6 @@ export default {
     .card_wrapper {
         width: calc((100% - 2rem) / 3);
         aspect-ratio: 1/1;
-        border: 1px dashed red;
 
     }
     .inner_card {
@@ -49,7 +45,6 @@ export default {
          img {
             border-radius: 10px;
              filter: brightness(40%);
-
          }
     }
 
@@ -69,9 +64,6 @@ export default {
 
         font-size: 1.1rem;
     }
-// .inner_card {
-//     // background-image: v-bind(url(imgPath));
 
-// }
 
 </style>
