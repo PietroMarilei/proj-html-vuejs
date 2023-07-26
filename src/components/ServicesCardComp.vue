@@ -50,23 +50,35 @@ export default {
          border-radius: 10px;
          padding: 1rem;
         min-height: 100%;
+        transition: 0.2s all ease-in ;
+        aspect-ratio: 1/1;
 
          
     }
+    .card:hover{ 
+     box-shadow: 3px 8px 20px $blueGrey;
+
+     button {   
+        background-color: $lightblue;
+        border-radius: 50%;
+     }
+
+  }
     .card_cont {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 1rem;
+        gap: 1rem;
 
         button {
             all: unset;
             height: 30px;
+            width: 30px;
+            flex-shrink: 0;
+            text-align: center;
+            transition: 0.2s all ease-in ;
         }
 
-        button:hover {
-
-        }
 
         .left_side {
             .img_wrapper {

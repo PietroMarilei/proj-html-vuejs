@@ -113,6 +113,9 @@ export default {
         border-radius: 3px;
         margin: 0.3rem;
     }
+    button:hover {
+        background-color:#07afaf;
+      }
 }
 .card_wrap {
     display: flex;

@@ -31,7 +31,7 @@ export default {
                             We will respond to your message as soon as possibile
                         </p>
                     </div>
-                    <form action="">
+                    <form @submit.prevent action="">
                         <div class="row">
                             <input type="text" placeholder="Name">
 
@@ -195,6 +195,14 @@ Message
             padding: 0.3rem 0.7rem;
             border-radius: 3px;
             margin: 0.5rem 0;
+            border: 1px solid transparent;
+        }
+
+        button:hover {
+            background-color:$veryLightBlue ;
+            border: 1px solid $lightblue;
+            color: $darkBlue;
+
         }
     }
 
@@ -250,6 +258,10 @@ Message
               border-radius: 3px;
               margin: 0.6rem;
                     margin-left: 0;
+    }
+    button:hover {
+        background-color:$lightblue ;
+        color:$veryLightBlue ;
     }
 }
 </style>

@@ -25,7 +25,7 @@ export default {
             </div>
             <div class="title_wrapper">
                 <h2>{{ title }}</h2>
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
         </div>
@@ -61,9 +61,31 @@ export default {
         bottom: 0;
         right: 0;
         padding: 0.8rem;
-
         font-size: 1.1rem;
     }
 
+    p {
+        position: absolute;
+        top: 65%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: none;
+        z-index: 1;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+
+    .card_wrapper:hover {
+        h2 {
+           top: 50%; 
+        }
+
+        p {
+            display: block;
+            top: 70%;
+        }
+    }
 
 </style>

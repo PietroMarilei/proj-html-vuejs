@@ -38,28 +38,28 @@ export default {
 
                 <div class="numb">
                         <h2>
-                            128
+                            230
                         </h2>
                         <h4>
-                            Certifications
+                            Employees
                         </h4>
                     </div>
 
                     <div class="numb">
                         <h2>
-                            128
+                            517
                         </h2>
                         <h4>
-                            Certifications
+                            Customers
                         </h4>
                     </div>
 
                     <div class="numb">
                         <h2>
-                            128
+                            94
                         </h2>
                         <h4>
-                            Certifications
+                            Countreies served
                         </h4>
                     </div>
             </div>

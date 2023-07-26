@@ -198,8 +198,11 @@ footer {
         font-size: 1rem;
         padding: 0.4rem 0.5rem;
         border-radius: 3px;
+    }
 
-
+    button:hover {
+        background-color:$lightblue ;
+        color:$backGrey ;
     }
 }
 .card {

@@ -16,6 +16,13 @@ export default {
 <template>
     <div class="upper_container blackGreyBg">
         <div class="container">
+            <div class="dots">
+                <img src="../assets/img/bullets.png" alt="">
+            </div>
+
+             <div class="dots_lower">
+                    <img src="../assets/img/bullets.png" alt="">
+                </div>
             <div class="row">
                 <div class="wrapper">
                     <div class="left_side">
@@ -81,9 +88,6 @@ export default {
             </div>
         </div>
 
-        <!-- <div class="right_side">
-            <img src="../assets/img/about-4.jpg" alt="">
-        </div> -->
 
     </div>
 </template>
@@ -96,6 +100,7 @@ export default {
     background-position:  right;
     background-repeat: no-repeat;
     background-size: 45% ;
+    position: relative;
 
 }
 .container {
@@ -103,8 +108,34 @@ export default {
     width: 800px;
     margin: 0 auto;
     // margin-right: 400px;
+    position: relative;
 }
+.dots {
+    position: absolute;
+    top: 4%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    height: 100px;
 
+    img {
+        opacity: 50%;
+        width:40%;
+        object-fit: fill;
+    }
+}
+.dots_lower {
+    position: absolute;
+    bottom: -18%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+
+    img {
+        opacity: 50%;
+        width:40%;
+        object-fit: fill;
+    }
+}
 .wrapper {
     // display: flex;
     // justify-content: space-between;
@@ -182,6 +213,10 @@ export default {
           
         }
 
+         #get_btn:hover {
+            background-color:#0dc1c1;
+         }
+
         #read_more {   
             all:unset;
               border: 2px solid $lightblue;
@@ -193,6 +228,13 @@ export default {
               margin: 0.3rem;
           
         }
+        #read_more:hover {
+            background-color:#07afaf;
+        }
+
+        button :hover {
+        
+      }
     }
 }
 </style>
