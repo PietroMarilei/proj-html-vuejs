@@ -57,25 +57,10 @@ export default {
                         <h3>About</h3>
 
                         <ul>
-                            <li>
-                                <i class="fa-solid fa-chevron-right"></i> The Company
+                            <li v-for="singleData in this.store.footerData.about">
+                                <i class="fa-solid fa-chevron-right"></i> {{singleData}}
                             </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right"></i> Istitutional
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right"></i> Social Events
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-chevron-right"></i> Innovation
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right"></i> Enviroment
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-chevron-right"></i> Technology
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -85,25 +70,10 @@ export default {
                             <h3>Services</h3>
 
                             <ul>
-                                <li>
-                                    <i class="fa-solid fa-chevron-right"></i> Audit &Assurance
+                                <li v-for="singleData in this.store.footerData.services">
+                                    <i class="fa-solid fa-chevron-right"></i>  {{singleData}}
                                 </li>
-                                <li>
-                                    <i class="fa-solid fa-chevron-right"></i> Financial Advisory
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-chevron-right"></i> Analytics M&A
-                                </li>
-
-                                <li>
-                                    <i class="fa-solid fa-chevron-right"></i> Middle Marketing
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-chevron-right"></i> Legal Consulting
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-chevron-right"></i> regulatory Risk
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -113,25 +83,10 @@ export default {
                                 <h3>Services</h3>
 
                                 <ul>
-                                    <li>
-                                        <i class="fa-solid fa-chevron-right"></i> Resposnability
+                                    <li v-for="singleData in this.store.footerData.support">
+                                        <i class="fa-solid fa-chevron-right"></i> {{singleData}}
                                     </li>
-                                    <li>
-                                        <i class="fa-solid fa-chevron-right"></i> Term of Use
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-chevron-right"></i> About Cookies
-                                    </li>
-
-                                    <li>
-                                        <i class="fa-solid fa-chevron-right"></i> Privacy policy
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-chevron-right"></i> Accessibility
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-chevron-right"></i> Information
-                                    </li>
+                                  
                                 </ul>
                             </div>
                         </div>

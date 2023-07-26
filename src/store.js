@@ -55,6 +55,33 @@ export const store = reactive(
                 title: 'Confraternization of the procurement team'
             },
         ],
+
+        footerData: {
+            about: [
+                'The Company',
+                'Istitutional',
+                'Social Events',
+                'Innovation',
+                'Enviroment',
+                'Technology'
+            ],
+            services: [
+                'Audit &Assurance',
+                'Financial Advisory',
+                'Analytics M&A',
+                'Middle Marketing' ,
+                'Legal Consulting',
+                'regulatory Risk',
+            ],
+            support: [
+                'Responsability',
+                'Term of Use',
+                'About Cookies',
+                'Privacy Policy',
+                'Accessibilty',
+                'Information',
+            ]
+        }
     },
 )
 
