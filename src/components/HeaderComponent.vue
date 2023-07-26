@@ -5,7 +5,7 @@ export default {
 
   data() {
     return {
-
+        store,
     }
   },
   methods: {
@@ -57,12 +57,8 @@ export default {
             <img src="../assets/img/logo.png" alt="">
 
             <ul>
-              <li>HOME</li>
-              <li>SERVICES</li>
-              <li>ABOUT</li>
-              <li>PROJECTS</li>
-              <LI>RESULTS</LI>
-
+              <li v-for="singleData in this.store.headerArr">{{singleData}}</li>
+        
               <button>
                 GET IN TOUCH
               </button>
@@ -173,6 +169,7 @@ export default {
         margin: 0 0.5rem;
         color: $darkGrey;
         font-size: 0.9rem;
+        text-transform: uppercase;
       }
 
       button {

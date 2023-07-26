@@ -56,6 +56,14 @@ export const store = reactive(
             },
         ],
 
+        headerArr: [
+            'Home',
+            'Services',
+            'About',
+            'Projects',
+            'Results',
+        ],
+
         footerData: {
             about: [
                 'The Company',
