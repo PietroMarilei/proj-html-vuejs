@@ -148,6 +148,8 @@ export default {
 
   #faces {
     width: 100%;
+    position: relative;
+    left: 10px;
   }
 
 
@@ -163,6 +165,7 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      
 
 
       li {

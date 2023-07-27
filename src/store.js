@@ -63,7 +63,12 @@ export const store = reactive(
             'Projects',
             'Results',
         ],
-
+        numbersData: {
+            certifications: 128,
+            employees: 230,
+            customers: 517,
+            countries: 94,
+        },
         footerData: {
             about: [
                 'The Company',

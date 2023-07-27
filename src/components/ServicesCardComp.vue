@@ -52,6 +52,7 @@ export default {
         min-height: 100%;
         transition: 0.2s all ease-in ;
         aspect-ratio: 1/1;
+        cursor: pointer;
 
          
     }

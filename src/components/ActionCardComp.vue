@@ -37,6 +37,7 @@ export default {
     .card_wrapper {
         width: calc((100% - 2rem) / 3);
         aspect-ratio: 1/1;
+        cursor: pointer;
 
     }
     .inner_card {
@@ -78,8 +79,11 @@ export default {
 
 
     .card_wrapper:hover {
+        
+
         h2 {
-           top: 50%; 
+           top: 50%;
+         
         }
 
         p {

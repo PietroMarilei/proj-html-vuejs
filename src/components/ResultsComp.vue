@@ -8,13 +8,20 @@ export default {
         }
     },
     methods: {
-
+        increaseNum(){
+            this.store.numbersData.certifications ++;
+            this.store.numbersData.employees ++;
+            this.store.numbersData.customers ++;
+            this.store.numbersData.countries ++;
+        }
     },
+    mounted() {
+    }
 }
 </script>
 
 <template>
-    <div class="bg_container">
+    <div @click="increaseNum()" class="bg_container">
         <div class="container">
             <div class="row title">
                 <p>
@@ -27,9 +34,9 @@ export default {
             </div>
 
             <div class="row numbers">
-                <div class="numb">
+                <div  class="numb">
                     <h2>
-                        128
+                        {{ this.store.numbersData.certifications }}
                     </h2>
                     <h4>
                         Certifications
@@ -38,7 +45,7 @@ export default {
 
                 <div class="numb">
                         <h2>
-                            230
+                            {{ this.store.numbersData.employees }}
                         </h2>
                         <h4>
                             Employees
@@ -47,7 +54,7 @@ export default {
 
                     <div class="numb">
                         <h2>
-                            517
+                            {{ this.store.numbersData.customers }}
                         </h2>
                         <h4>
                             Customers
@@ -56,7 +63,7 @@ export default {
 
                     <div class="numb">
                         <h2>
-                            94
+                            {{ this.store.numbersData.countries }}
                         </h2>
                         <h4>
                             Countreies served

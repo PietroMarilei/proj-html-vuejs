@@ -13,19 +13,16 @@ export default {
   data(){
     return {
       store,
+      i: 0,
       //like to state management
     }
   }, 
   methods: {
+ 
 
   },
-  created() {
-    //  axios
-    //   .get("alinkGoesHere")
-    //   .then(response => {
-    //     store.someData = response.data
-    //     ;
-    //   })
+  mounted() {
+   
   },
 }
 </script>
