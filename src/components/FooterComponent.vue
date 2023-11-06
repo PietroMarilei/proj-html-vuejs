@@ -19,7 +19,7 @@ export default {
             <div class="row">
                 <div class="col">
                     <div class="first_sect">
-                        <img src="../assets/img/logo.PNG" alt="">
+                        <img src="../assets/img/logo.png" alt="a">
 
                         <p>
                             A Functional HTML template <br>for Corporate Business
