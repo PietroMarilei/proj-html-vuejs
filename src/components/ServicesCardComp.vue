@@ -24,7 +24,8 @@ export default {
         <div class="card_cont">
             <div class="left_side">
                 <div class="img_wrapper">
-                    <img :src="getImagePath(iconPath)" alt="icon here">
+                    <img :src="iconPath" alt="icon here">
+                    <!-- <img src="../../public/svgs/svg-0.svg" alt=""> -->
                 </div>
                 <!-- <img :src="getImagePath(iconPath)" alt="icon here"> -->
                 <h3>{{ title }}</h3>
