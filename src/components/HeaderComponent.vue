@@ -66,7 +66,7 @@ export default {
 
           </div>
           <div class="img_wrapper">
-            <img id="faces" src="../assets/img/bg-parallax cropped.png" alt="">
+            <img id="faces" src="../assets/img/bg-parallaxCropped.png" alt="a">
           </div>
           
 
