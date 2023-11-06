@@ -4,27 +4,27 @@ export const store = reactive(
     {
         allServices: [
             {
-                icon: '../../public/svgs/svg-1.svg',
+                icon: '/svgs/svg-1.svg',
                 title: 'Audit e Assurance',
             },
             {
-                icon: '../../public/svgs/svg-2.svg',
+                icon: '/svgs/svg-2.svg',
                 title: 'Financial Advisory',
             },
             {
-                icon: '../../public/svgs/svg-3.svg',
+                icon: '/svgs/svg-3.svg',
                 title: 'Analytics and M&A',
             },
             {
-                icon: '../../public/svgs/svg-4.svg',
+                icon: '/svgs/svg-4.svg',
                 title: 'Middle Marketing',
             },
             {
-                icon: '../../public/svgs/svg-5.svg',
+                icon: '/svgs/svg-5.svg',
                 title: 'Legal Consulting and Saul Goodman Stuff',
             },
             {
-                icon: '../../public/svgs/svg-6.svg',
+                icon: '/svgs/svg-6.svg',
                 title: 'Regulatory Risk',
             },
         ],
