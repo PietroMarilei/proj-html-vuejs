@@ -125,7 +125,7 @@ export default {
 }
 
 .header_jumbo {
-  background-image: url(../assets/img/SquareBG.PNG);
+  background-image: url(../assets/img/SquareBG.png);
   // background-image: url("../assets/img/bg-parallax\ cropped.png");
   background-size: 100%;
   background-repeat: no-repeat;
